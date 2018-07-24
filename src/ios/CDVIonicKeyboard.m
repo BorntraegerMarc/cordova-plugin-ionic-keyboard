@@ -124,7 +124,7 @@ typedef enum : NSUInteger {
 {
     CGRect rect = [[note.userInfo valueForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
     double height = rect.size.height;
-    height += 20;
+    height += 20; // Komed specific height so full message create box can be shown and it's not cut off
 
     if (self.isWK) {
         double duration = [[note.userInfo valueForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
